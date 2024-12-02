@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Income Tax Calculator</title>
+    <title>Reseravation Request</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -10,11 +10,48 @@
         <fieldset>
             <legend>General Information</legend>
             <label for="input-arrival-date">Arrival Date:</label>
-            <input type="date" id="input-arrival-date" name="arrival_date"><br>
+            <input type="text" id="input-arrival-date" name="arrival_date"><br>
 
             <label for="input-nights">Nights:</label>
-            <input type="number" id="input-nights" name="nights"><br>
+            <input type="number" id="input-nights" name="nights">
+            
+            <span class="mandatory">Must be numeric.</span><br>
+            
+            <label for="input-adults">Adults:</label>
+            <input type="number" id="input-adults" name="nights"><br>
+            
+            <label for="input-childrens">Childrens:</label>
+            <input type="number" id="input-childrens" name="nights"><br>
         </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <span> Room Type:<span>
+
+                <input type="radio" id="input-roomtype" name="input-roomtype1">
+            <label for="input-roomtype1">Standard </label>
+    
+            <input type="radio" id="input-roomtype" name="input-roomtype2">
+            <label for="input-roomtype2">Business</label>
+
+            <input type="radio" id="input-roomtype" name="input-roomtype3">
+            <label for="input-roomtype3">Suite </label>
+        
+<br>
+
+            <span> Bed Type:</span>
+            <input type="radio" id="input-bedtype" name="input-bedtype1">
+            <label for="input-bedtype1">King </label>
+
+            <input type="radio" id="input-bedtype" name="input-bedtype2">
+            <label for="input-bedtype2">Double Double</label>
+            <br>
+         
+            <input type="checkbox" id="input-smoking" name="input-smoking">
+            <label for="input-smoking">Smoking</label>
+
+        </fieldset>
+
 
         <fieldset>
             <legend>Contact Information</legend>
@@ -22,27 +59,19 @@
             <input type="text" id="input-name" name="name"><br>
 
             <label for="input-email">Email:</label>
-            <input type="text" id="input-email" name="email"><br>
+            <input type="email" id="input-email" name="email">
+            
+            <span class="mandatory">Must be a email address</span><br>
 
             <label for="input-phone">Phone:</label>
-            <input type="text" id="input-phone" name="phone"><br>
+            <input type="tel" id="input-phone" name="phone">
+            <span class="mandatory">This field is required</span><br>
         </fieldset>
+        <br>
 
-
-        <fieldset>
-            <legend>Contact Information</legend>
-            <label for="input-name">Name:</label>
-            <input type="text" id="input-name" name="name"><br>
-
-            <label for="input-email">Email:</label>
-            <input type="text" id="input-email" name="email"><br>
-
-            <label for="input-phone">Phone:</label>
-            <input type="text" id="input-phone" name="phone"><br>
-        </fieldset>
 
         <button type="submit">Submit Request</button>
-        <button type="button" id="btn-clear-form">Clear Form</button>
+
     </form>
     <footer>
         <p>&copy; Panth Kakadia, n01695599 2024</p>

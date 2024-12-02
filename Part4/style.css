@@ -1,12 +1,14 @@
 body {
     text-align: center;
+
     font-family: Arial, sans-serif;
     margin: 30px;
+    
 }
 
 input[type="text"] {
-    width: 150px;
-    padding: 5px;
+    width: 110px;
+    padding: 4px;
     margin-bottom: 10px;
 }
 input[readonly] {
@@ -14,9 +16,17 @@ input[readonly] {
 }
 label {
     display: inline-block;
-    width: 120px;
+    width: 110px;
     margin-bottom: 10px;
 }
+.mandatory {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+    font-style: italic;
+    display: inline-block; /* Ensure it aligns properly with the input field */
+}
+
 
 button {
     padding: 8px 12px;
