@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+input[readonly] {
+    background-color: white;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
